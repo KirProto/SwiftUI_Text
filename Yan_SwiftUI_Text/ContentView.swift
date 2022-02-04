@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Let's style our text views with fonts, colors and line spacing")
+        //            .kerning(3)
+            .tracking(3)
             .padding()
+            .lineLimit(nil)
+            .truncationMode(.middle)
+            .font(.largeTitle)
+            .multilineTextAlignment(.center)
+            .background(Color.cyan)
+        // .background(Color.init)
+            .foregroundColor(.white)
+            .lineSpacing(10)
     }
 }
 
